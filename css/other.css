@@ -1,0 +1,152 @@
+/* =========================
+   HERO SECTION
+========================= */
+.on{
+  display: none;
+}
+body{
+  background-color: #111;
+}
+
+#header{
+  padding: 20px 0;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.logo{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header .center{
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.other-hero .icon{
+  width: 200px;
+}
+
+.other-hero {
+  width: 100%;
+  text-align: center;
+  padding: 140px 20px 100px;
+}
+
+.other-hero h1 {
+  font-size: 50px;
+  font-family: "Prosto One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -1px;
+  color: #74eaff;
+  margin-bottom: 18px;
+
+}
+
+.other-hero p {
+  font-size: 17px;
+  color: #fff;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+
+.other-hero img {
+  width: 78%;
+  max-width: 900px;
+  border-radius: 10px;
+  filter: brightness(0.97);
+  transition: 0.3s;
+}
+.other-hero img:hover {
+  filter: brightness(1);
+}
+
+
+/* =========================
+   TABS
+========================= */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 70px;
+}
+
+.tabs button {
+  font-size: 17px;
+  background: none;
+  border: none;
+  padding: 6px 2px;
+  color: #888;
+  cursor: pointer;
+  transition: 0.25s;
+  border-bottom: 1px solid transparent;
+}
+
+.tabs button:hover {
+  color: #74eaff;
+}
+
+.tabs button.active {
+  color: #74eaff;
+  font-weight: 600;
+  border-bottom: 1px solid #74eaff;
+}
+
+
+/* =========================
+   CARD GRID
+========================= */
+.card-grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px 160px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+  
+}
+
+.card {
+  cursor: pointer;
+  transition: 0.3s ease;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.35s;
+  border: 1px solid #eee;
+}
+
+.card:hover img {
+  transform: translateY(-4px);
+  border-color: #ccc;
+  opacity: 0.95;
+}
+
+.card .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 14px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.card .desc {
+  font-size: 14px;
+  color: #d9d9d9;
+}
